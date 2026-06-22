@@ -1,7 +1,7 @@
 import sys
 
 
-def parse_args() -> dict:
+def parse_args() -> dict[str, int]:
     inventory = {}
     for arg in sys.argv[1:]:
         try:

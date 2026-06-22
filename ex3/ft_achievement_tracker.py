@@ -1,7 +1,7 @@
 import random
 
 
-def gen_player_achievements() -> set:
+def gen_player_achievements() -> set[str]:
     advancements = [
         "Minecraft", "Stone Age", "Getting an Upgrade",
         "Acquire Hardware", "Suit Up", "Hot Stuff",
@@ -26,7 +26,7 @@ def gen_player_achievements() -> set:
     return achievements_set
 
 
-def main():
+def main() -> None:
     print("=== Achievement Tracker System ===")
 
     alice = gen_player_achievements()
